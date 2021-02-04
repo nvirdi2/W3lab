@@ -71,6 +71,7 @@ namespace sdds {
 			setName(name);
 			m_taxed = taxed;
 			m_price = price;
+			m_itemName[20] = char(0);
 		}
 	}
 
@@ -78,6 +79,7 @@ namespace sdds {
 	{
 		m_itemName[0] = '\0';
 		m_price = 0.0;
+		m_taxed = true;
 	}
 
 	void Item::setName(const char* name) 
