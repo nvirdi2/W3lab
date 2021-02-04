@@ -70,11 +70,10 @@ namespace sdds
 		}
 
 		else 
-		{
-			cout << "| Invalid Bill                         |" << endl;
-		}
+		cout << "| Invalid Bill                         |" << endl;
 		cout << "+--------------------------------------+" << endl;
-	}
+		}
+	
 
 
 	void Bill::init(const char* title, int noOfItems) 
@@ -128,7 +127,6 @@ namespace sdds
 		m_items = nullptr;
 	}
 
-
 	void Bill::Title()const 
 	{
 		cout << "+--------------------------------------+" << endl;
@@ -146,13 +144,11 @@ namespace sdds
 			cout<< " |" << endl;
 		}
 
-		else
-		{ 
-			cout << "| Invalid Bill                         |" << endl;
+		else cout << "| Invalid Bill                         |" << endl;
 			cout << "+----------------------+---------+-----+" << endl;
 			cout << "| Item Name            | Price   + Tax |" << endl;
 			cout << "+----------------------+---------+-----+" << endl;
-		}
+
 	}
 
 
