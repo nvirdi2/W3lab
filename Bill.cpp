@@ -113,7 +113,7 @@ namespace sdds
 
 				if (!(m_items[x].isValid())) 
 				{
-					return true;
+					return valid;
 				}
 			}
 
