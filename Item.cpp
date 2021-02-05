@@ -15,8 +15,10 @@ using namespace std;
 
 namespace sdds {
 
+	
 	const double Tax = 0.13;
 
+	
 	void Item::display()const 
 	{
 		if (isValid()) 
@@ -54,11 +56,13 @@ namespace sdds {
 		}
 	}
 
+	
 	bool Item::isValid()const 
 	{
 		return !(m_price == 0.00 && m_itemName[0] == '\0');
 	}
 
+	
 	void Item::set(const char* name, double price, bool taxed) 
 	{
 		if (name == NULL || price < 0) 
@@ -75,6 +79,7 @@ namespace sdds {
 		}
 	}
 
+	
 	void Item::setEmpty() 
 	{
 		m_itemName[0] = '\0';
@@ -82,16 +87,19 @@ namespace sdds {
 		m_taxed = true;
 	}
 
+	
 	void Item::setName(const char* name) 
 	{
 		strnCpy(m_itemName, name, 20);
 	}
 
+	
 	double Item::price()const 
 	{
 		return m_price;
 	}
 
+	
 	double Item::tax()const
 	 {
 		if (m_taxed != false) 
